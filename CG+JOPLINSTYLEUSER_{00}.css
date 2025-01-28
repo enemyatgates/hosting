@@ -32,4 +32,9 @@
         hr {border-bottom: 0.1em solid;}
         .exported-note-title {border-bottom: 0.1em solid #000000;}
         .exported-note {border-bottom: 0.1em solid #000000;}
+	.cm-comment {color: greenyellow;}
+}
+
+
+
 /* End */
