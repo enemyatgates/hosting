@@ -6,13 +6,16 @@
 	* {line-height: 1.50em;}
 	* {text-align: justify;}
 	* {border: none;}
+	* {white-space: pre-wrap;}
+	* {word-wrap: break-word;}
+	* {overflow: hidden;}
 	body, html, p {font-size: 1.00em; font-weight: normal;}
 	table, table td, table tr, table th {font-family: 'Bookman Old Style', serif; font-size: 1.00em; font-weight: normal; border: none;}
 	h1, h2, h3, h4, h5, h6 {font-size: 1.00em; font-weight: bold;}
 	hr {border-bottom: 0.1em solid #000000;}
-	blockquote {font-weight: bold; font-style: italic; font-variant: small-caps; overflow: hidden;}
-	code {text-align: left; overflow: hidden; white-space: pre-wrap; word-wrap: break-word;}
-	pre {text-align: left; overflow: hidden; white-space: pre-wrap; word-wrap: break-word;}
+	blockquote {font-weight: bold; font-variant: small-caps;}
+	code {text-align: left;}
+	pre {text-align: left;}
 	.exported-note-title {font-size: 1.00em; font-variant: small-caps; border-bottom: 0.1em solid #000000; margin: 0em; padding: 0em;}
 	.exported-note {font-size: 1.00em; border-bottom: 0.1em solid #000000; margin: 0em; padding: 0em;}
 	.cm-comment {font-size: 1.00em;}
