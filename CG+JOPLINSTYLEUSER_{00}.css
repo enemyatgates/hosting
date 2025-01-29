@@ -13,7 +13,6 @@
 	table tbody {display: table-row-group;}
 	table, table td, table th, table tr {font-family: 'Bookman Old Style', serif; font-size: 1.00em; font-weight: normal; border: none; overflow: visible;}
 	table th, table td {white-space: normal; word-wrap: break-word; white-space: pre-wrap;}
-	hr {border-bottom: 0.1em solid #000000;}
 	blockquote {font-weight: bold; font-variant: small-caps; white-space: pre-wrap; word-wrap: break-word; overflow: hidden;}
 	code {text-align: left; white-space: pre-wrap; word-wrap: break-word; overflow: hidden;}
 	pre {text-align: left; white-space: pre-wrap; word-wrap: break-word; overflow: hidden;}
