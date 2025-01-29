@@ -20,5 +20,5 @@
 	.exported-note-title {font-size: 1.00em; font-variant: small-caps; border-bottom: 0.1em solid #000000; margin: 0em; padding: 0em;}
 	.exported-note {font-size: 1.00em; border-bottom: 0.1em solid #000000; margin: 0em; padding: 0em;}
 	.cm-comment {font-size: 1.00em;}
-	@media print {hr {border-top: 0.1em solid black;}}
+	@media print {hr {border-bottom: 0.1em solid black;}}
 /* End */
