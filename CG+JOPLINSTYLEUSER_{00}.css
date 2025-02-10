@@ -1,11 +1,13 @@
 /* General Styles */
 * {
-	font-family: 'Bookman Old Style', serif;
-	font-size: 16px;
-	font-weight: normal;
-	line-height: 1.5em;
-	text-align: justify;
-	border: none;
+    font-family: 'Bookman Old Style', serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5em;
+    text-align: justify;
+    border: none;
+    background: none;
+    color: black;
 }
 
 /* Headings */
@@ -18,85 +20,71 @@ h6 { font-size: 1em; }
 
 /* Horizontal Rule */
 hr {
-	border-bottom: 0.1em solid white;
+    border-bottom: 0.1em solid black;
 }
 
 /* Table Formatting */
 table {
-	font-family: 'Bookman Old Style', serif;
-	width: 100%;
-	table-layout: auto;
-	border-collapse: collapse;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    font-family: 'Bookman Old Style', serif;
 }
 th, td {
-	padding: 8px;
-	border: 1px solid #ddd;
+    padding: 8px;
+    border: 1px solid black;
+    font-family: 'Bookman Old Style', serif;
 }
 th {
-	font-weight: bold;
-	text-align: left;
+    font-weight: bold;
+    text-align: left;
 }
 
 /* Blockquotes */
 blockquote {
-	font-style: italic;
-	border-left: 2px solid black;
+    font-style: italic;
+    color: black;
+    border-left: 4px solid black;
+    padding-left: 10px;
+    font-family: 'Bookman Old Style', serif;
 }
 
 /* Code Blocks */
 code, pre {
-	font-family: 'Bookman Old Style', serif;
-	border: 1px solid black;
-	padding: 5px;
-	overflow-x: auto;
-	display: block;
+    font-family: 'Bookman Old Style', monospace;
+    border: 1px solid black;
+    padding: 5px;
+    overflow-x: auto;
+    display: block;
+    background: none;
+    color: black;
 }
 
 /* Exported Notes */
-.exported-note-title, .exported-note {
-	font-size: 1.2em;
-	font-weight: bold;
-	font-variant: small-caps;
-	border-bottom: 2px solid black;
-	margin-bottom: 10px;
-	padding-bottom: 5px;
+.exported-note-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-variant: small-caps;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.exported-note {
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 /* Print Styles */
 @media print {
-	body {
-		font-size: 12pt;
-		color: black;
-		background: none;
-	}
-	hr {
-		border-bottom: 1px solid black;
-	}
+    body {
+        font-size: 12pt;
+        color: black;
+        background: none;
+    }
+    hr {
+        border-bottom: 1px solid black;
+    }
 }
-
-/* For styling the rendered Markdown */
-/* Start */
-/*	* {font-family: 'Bookman Old Style', serif;}
-	* {font-size: 16px;}
-	* {font-weight: normal;}
-	* {line-height: 1.50em;}
-	* {text-align: justify;}
-	* {border: none;}
-	hr {border-bottom: 0.1em solid white;}
-	h1, h2, h3, h4, h5, h6 {font-size: 1.00em; font-weight: bold;}
-	body, html, p {font-size: 1.00em; font-weight: normal;}
-	table {display: block; width: 100%; table-layout: auto;}
-	table thead {display: table-header-group;}
-	table tbody {display: table-row-group;}
-	table, table td, table th, table tr {font-family: 'Bookman Old Style', serif; font-size: 1.00em; font-weight: normal; border: none; overflow: visible;}
-	table th {font-weight: bold; white-space: normal; word-wrap: break-word; white-space: pre-wrap;}
-	table td {white-space: normal; word-wrap: break-word; white-space: pre-wrap;}
-	blockquote {font-weight: bold; font-variant: small-caps; color: black; margin: 0; white-space: pre-wrap; word-wrap: break-word; overflow: hidden;}
-	code {text-align: left; white-space: pre-wrap; word-wrap: break-word; overflow: hidden;}
-	pre {text-align: left; white-space: pre-wrap; word-wrap: break-word; overflow: hidden;}
-	.exported-note-title {font-size: 1.00em; font-variant: small-caps; border-bottom: 0.1em solid #000000; margin: 0em; padding: 0em;}
-	.exported-note {font-size: 1.00em; border-bottom: 0.1em solid #000000; margin: 0em; padding: 0em;}
-	.cm-comment {font-size: 1.00em;}
-	@media print {hr {border-bottom: 0.1em solid black;}}
-* /
-/* End */
