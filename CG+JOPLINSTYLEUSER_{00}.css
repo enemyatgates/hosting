@@ -7,7 +7,18 @@
     text-align: justify;
     border: none;
     background: none;
-    color: black;
+}
+
+/* Adjust text color for dark mode */
+@media (prefers-color-scheme: dark) {
+    * {
+        color: white;
+    }
+}
+@media (prefers-color-scheme: light) {
+    * {
+        color: black;
+    }
 }
 
 /* Headings */
@@ -30,20 +41,15 @@ table {
     border-collapse: collapse;
     font-family: 'Bookman Old Style', serif;
 }
-th, td {
+th, td, tr {
     padding: 8px;
     border: 1px solid black;
     font-family: 'Bookman Old Style', serif;
-}
-th {
-    font-weight: bold;
-    text-align: left;
 }
 
 /* Blockquotes */
 blockquote {
     font-style: italic;
-    color: black;
     border-left: 4px solid black;
     padding-left: 10px;
     font-family: 'Bookman Old Style', serif;
@@ -57,7 +63,6 @@ code, pre {
     overflow-x: auto;
     display: block;
     background: none;
-    color: black;
 }
 
 /* Exported Notes */
