@@ -1,6 +1,83 @@
+/* General Styles */
+* {
+	font-family: 'Bookman Old Style', serif;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.5em;
+	text-align: justify;
+	border: none;
+}
+
+/* Headings */
+h1 { font-size: 2em; }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1.1em; }
+h6 { font-size: 1em; }
+
+/* Horizontal Rule */
+hr {
+	border-bottom: 0.1em solid white;
+}
+
+/* Table Formatting */
+table {
+	width: 100%;
+	table-layout: auto;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 8px;
+	border: 1px solid #ddd;
+}
+th {
+	font-weight: bold;
+	text-align: left;
+}
+
+/* Blockquotes */
+blockquote {
+	font-style: italic;
+	color: #555;
+	border-left: 4px solid #ccc;
+	padding-left: 10px;
+}
+
+/* Code Blocks */
+code, pre {
+	font-family: monospace;
+	background: #f4f4f4;
+	border: 1px solid #ddd;
+	padding: 5px;
+	overflow-x: auto;
+	display: block;
+}
+
+/* Exported Notes */
+.exported-note-title, .exported-note {
+	font-size: 1.2em;
+	font-weight: bold;
+	border-bottom: 2px solid black;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+}
+
+/* Print Styles */
+@media print {
+	body {
+		font-size: 12pt;
+		color: black;
+		background: none;
+	}
+	hr {
+		border-bottom: 1px solid black;
+	}
+}
+
 /* For styling the rendered Markdown */
 /* Start */
-	* {font-family: 'Bookman Old Style', serif;}
+/*	* {font-family: 'Bookman Old Style', serif;}
 	* {font-size: 16px;}
 	* {font-weight: normal;}
 	* {line-height: 1.50em;}
@@ -23,3 +100,4 @@
 	.cm-comment {font-size: 1.00em;}
 	@media print {hr {border-bottom: 0.1em solid black;}}
 /* End */
+*/
