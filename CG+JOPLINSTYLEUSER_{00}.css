@@ -23,6 +23,7 @@ hr {
 
 /* Table Formatting */
 table {
+	font-family: 'Bookman Old Style', serif;
 	width: 100%;
 	table-layout: auto;
 	border-collapse: collapse;
@@ -39,16 +40,13 @@ th {
 /* Blockquotes */
 blockquote {
 	font-style: italic;
-	color: #555;
-	border-left: 4px solid #ccc;
-	padding-left: 10px;
+	border-left: 2px solid black;
 }
 
 /* Code Blocks */
 code, pre {
-	font-family: monospace;
-	background: #f4f4f4;
-	border: 1px solid #ddd;
+	font-family: 'Bookman Old Style', serif;
+	border: 1px solid black;
 	padding: 5px;
 	overflow-x: auto;
 	display: block;
@@ -58,6 +56,7 @@ code, pre {
 .exported-note-title, .exported-note {
 	font-size: 1.2em;
 	font-weight: bold;
+	font-variant: small-caps;
 	border-bottom: 2px solid black;
 	margin-bottom: 10px;
 	padding-bottom: 5px;
