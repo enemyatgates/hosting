@@ -1,103 +1,102 @@
 /* General Styles */
 * {
-    font-family: 'Bookman Old Style', serif;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1.5em;
-    text-align: justify;
-    border: none;
-    background: none;
+	font-family: 'Bookman Old Style', serif;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.5em;
+	text-align: justify;
+	border: none;
+	background: none;
 }
 
 /* Adjust text colour for dark mode */
 @media (prefers-color-scheme: dark) {
-    * {
-        color: white;
-    }
+	* {
+		color: white;
+	}
 	hr {
 		border-bottom: 0.1em solid white;
 	}
 }
 @media (prefers-color-scheme: light) {
-    * {
-        color: black;
-    }
+	* {
+		color: black;
+	}
 	hr {
 		border-bottom: 0.1em solid black;
 	}
 }
 
 /* Headings */
-h1 { font-size: 2em; }
+h1 { font-size: 2.00em; }
 h2 { font-size: 1.75em; }
-h3 { font-size: 1.5em; }
+h3 { font-size: 1.50em; }
 h4 { font-size: 1.25em; }
-h5 { font-size: 1.1em; }
-h6 { font-size: 1em; }
-
-/* Horizontal Rule */
-hr {
-    border-bottom: 0.1em solid black;
-}
+h5 { font-size: 1.10em; }
+h6 { font-size: 1.00em; }
 
 /* Table Formatting */
 table {
-    width: 100%;
-    table-layout: auto;
-    border-collapse: collapse;
-    font-family: 'Bookman Old Style', serif;
+	font-family: 'Bookman Old Style', serif;
+	width: 100%;
+	table-layout: auto;
+	border-collapse: collapse;
 }
 th, td, tr {
-    padding: 8px;
-    border: 1px solid black;
-    font-family: 'Bookman Old Style', serif;
+	font-family: 'Bookman Old Style', serif;
+	padding: 8px;
+	border: 1px solid black;
+}
+
+th {
+	font-weight: bold;
 }
 
 /* Blockquotes */
 blockquote {
-    font-style: italic;
-    border-left: 4px solid black;
-    padding-left: 10px;
-    font-family: 'Bookman Old Style', serif;
+	font-family: 'Bookman Old Style', serif;
+	font-style: italic;
+	border-left: 4px solid black;
+	padding-left: 10px;
 }
 
 /* Code Blocks */
 code, pre {
-    font-family: 'Bookman Old Style', monospace;
-    border: 1px solid black;
-    padding: 5px;
-    overflow-x: auto;
-    display: block;
-    background: none;
+	font-family: 'Bookman Old Style', monospace;
+	border: 1px solid black;
+	padding: 5px;
+	overflow-x: auto;
+	display: block;
+	background: none;
 }
 
 /* Exported Notes */
 .exported-note-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    font-variant: small-caps;
-    border-bottom: 2px solid black;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
+	font-size: 1.25em;
+	font-weight: bold;
+	font-variant: small-caps;
+	border-bottom: 2px solid black;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
 }
 .exported-note {
-    font-size: 1.2em;
-    font-weight: bold;
-    border-bottom: 2px solid black;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-bottom: 2px solid black;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
 }
 
 /* Print Styles */
 @media print {
-    body {
-        font-size: 12pt;
-        color: black;
-        background: none;
-    }
-    hr {
-        border-bottom: 1px solid black;
-    }
+	body {
+		font-size: 12pt;
+		color: black;
+		background: none;
+	}
+	hr {
+		border-bottom: 1px solid black;
+	}
 }
 
 /* For styling the rendered Markdown */
