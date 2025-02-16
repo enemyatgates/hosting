@@ -56,15 +56,11 @@ table th {
 blockquote {
 	font-family: 'Bookman Old Style', serif;
 	font-style: italic;
-	border-left: 4px solid black;
-	padding-left: 10px;
 }
 
 /* Code Blocks */
 code, pre {
 	font-family: 'Bookman Old Style', monospace;
-	border: 1px solid black;
-	padding: 5px;
 	overflow-x: auto;
 	background: none;
 }
@@ -79,8 +75,7 @@ code, pre {
 	padding-bottom: 5px;
 }
 .exported-note {
-	font-size: 1.2em;
-	font-weight: bold;
+	font-size: 1.00em;
 	border-bottom: 2px solid black;
 	margin-bottom: 10px;
 	padding-bottom: 5px;
