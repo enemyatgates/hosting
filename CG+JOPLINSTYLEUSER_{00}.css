@@ -81,6 +81,10 @@ code, pre {
 	padding-bottom: 5px;
 }
 
+.katex-display {
+	text-align: center !important;
+}
+
 /* Print Styles */
 @media print {
 	body {
@@ -90,5 +94,8 @@ code, pre {
 	}
 	hr {
 		border-bottom: 1px solid black;
+	}
+	.katex-display {
+		text-align: center !important;
 	}
 }
