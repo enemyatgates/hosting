@@ -1,50 +1,38 @@
 /* General Styles */
 * {
 	font-family: 'Bookman Old Style', serif;
-	font-size: 16px;
 	font-weight: normal;
 	line-height: 1.5em;
 	border: none;
 	background: none;
 }
 
-/* Adjust text colour for dark mode */
-@media (prefers-color-scheme: dark) {
-	* {
-		color: white;
-	}
-	hr {
-		border-bottom: 0.1em solid white;
-	}
-}
-@media (prefers-color-scheme: light) {
-	* {
-		color: black;
-	}
-	hr {
-		border-bottom: 0.1em solid black;
-	}
-}
+/* Text ALignment */
+p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {text-align: justify !important}
+pre, code, pre code  {text-align: left !important}
 
 /* Headings */
-h1 { font-size: 2.00em; }
-h2 { font-size: 1.75em; }
-h3 { font-size: 1.50em; }
-h4 { font-size: 1.25em; }
-h5 { font-size: 1.10em; }
-h6 { font-size: 1.00em; }
+h1 {font-size: 1.75em;font-variant: small-caps;}
+h2 {font-size: 1.50em;font-variant: small-caps;}
+h3 {font-size: 1.25em;}
+h4 {font-size: 1.25em;}
+h5 {font-size: 1.00em;}
+h6 {font-size: 1.00em;}
+
+/* Line Horizontal */
+hr {border-bottom: 0.10em solid;}
 
 /* Table Formatting */
 table {
-	font-family: 'Bookman Old Style', serif;
 	width: 100%;
 	table-layout: auto;
 	border-collapse: collapse;
+	border: 1px solid;
 }
 table th, table td, table tr {
 	font-family: 'Bookman Old Style', serif;
-	padding: 8px;
-	border: 1px solid black;
+	padding: 4px;
+	border: 1px solid;
 }
 
 table th {
@@ -61,40 +49,120 @@ blockquote {
 code, pre {
 	font-family: 'Bookman Old Style', monospace;
 	overflow-x: auto;
-	background: none;
 }
 
 /* Exported Notes */
 .exported-note-title {
-	font-size: 1.25em;
 	font-weight: bold;
 	font-variant: small-caps;
 	border-bottom: 2px solid black;
 	margin-bottom: 10px;
 	padding-bottom: 5px;
 }
+
 .exported-note {
-	font-size: 1.00em;
-	border-bottom: 2px solid black;
-	margin-bottom: 10px;
-	padding-bottom: 5px;
+	font-size: 0.75em;
 }
 
-katex {
-	text-align: center !important;
-}
+/*
 
-/* Print Styles */
-@media print {
-	body {
-		font-size: 12pt;
-		color: black;
-		background: none;
+Reference:
+
+Yes! In Joplin, various **styling elements** can be targeted using CSS in `userstyle.css`. Here’s a breakdown of key elements that you can style:  
+
+---
+
+## **1. Basic Text Elements**
+| Element | CSS Selector | Description |
+|---------|-------------|-------------|
+| **Paragraphs** | `p` | Regular text blocks |
+| **Headings** | `h1, h2, h3, h4, h5, h6` | Titles of different levels |
+| **Blockquotes** | `blockquote` | Indented quoted text |
+| **Lists** | `ul, ol, li` | Unordered (`ul`) and ordered (`ol`) lists |
+| **Horizontal Line** | `hr` | Divider (`---` or `***`) |
+
+---
+
+## **2. Code & Preformatted Text**
+| Element | CSS Selector | Description |
+|---------|-------------|-------------|
+| **Inline Code** | `code` | `Inline code` (inside a sentence) |
+| **Code Blocks** | `pre, pre code` | Multiline code blocks |
+| **Joplin Code Editor** | `.joplin-editable` | Markdown editor styling |
+
+---
+
+## **3. Tables**
+| Element | CSS Selector | Description |
+|---------|-------------|-------------|
+| **Table** | `table` | The entire table |
+| **Table Rows** | `tr` | Rows inside tables |
+| **Table Cells** | `td, th` | Cells (normal and header) |
+
+---
+
+## **4. Links & Media**
+| Element | CSS Selector | Description |
+|---------|-------------|-------------|
+| **Hyperlinks** | `a` | Clickable links |
+| **Images** | `img` | Embedded images |
+| **Attachments** | `.resource-icon` | Attached files like PDFs |
+
+---
+
+## **5. Math & Diagrams**
+| Element | CSS Selector | Description |
+|---------|-------------|-------------|
+| **KaTeX Inline Math** | `.katex` | `$E=mc^2$` (inline equations) |
+| **KaTeX Block Math** | `.katex-display` | `$$E=mc^2$$` (block equations) |
+| **Mermaid Diagrams** | `.mermaid` | Flowcharts, sequence diagrams |
+
+---
+
+## **6. Special Joplin Elements**
+| Element | CSS Selector | Description |
+|---------|-------------|-------------|
+| **Checkboxes (Task List)** | `.input-checkbox` | `- [ ] Task` or `- [x] Done` |
+| **Notebooks Sidebar** | `#react-root` | The left sidebar with notes |
+| **Tags** | `.tag-list` | The tags section |
+| **Note Title** | `.title-input` | The note’s title field |
+| **Editor Area** | `.joplin-editable` | The Markdown editor itself |
+
+---
+
+## **7. Printing/Export Styling**
+If you want styles to apply **only when printing (PDF export)**, use:  
+	@media print {
+		body {
+			font-size: 12pt;
+			color: black;
+		}
+		hr {
+			border-bottom: 1px solid black;
+		}
+		katex {
+			text-align: center !important;
+		}
 	}
-	hr {
-		border-bottom: 1px solid black;
+
+	@media (prefers-color-scheme: dark) {
+		* {
+			color: white;
+		}
+		hr {
+			border-bottom: 0.1em solid white;
+		}
 	}
-	katex {
-		text-align: center !important;
+	@media (prefers-color-scheme: light) {
+		* {
+			color: black;
+		}
+		hr {
+			border-bottom: 0.1em solid black;
+		}
 	}
-}
+
+---
+
+This should help you fine-tune Joplin’s styling! Need help with anything specific?
+*/
