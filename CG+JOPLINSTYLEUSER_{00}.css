@@ -81,7 +81,7 @@ code, pre {
 	padding-bottom: 5px;
 }
 
-.katex-display {
+katex {
 	text-align: center !important;
 }
 
@@ -95,7 +95,7 @@ code, pre {
 	hr {
 		border-bottom: 1px solid black;
 	}
-	.katex-display {
+	katex {
 		text-align: center !important;
 	}
 }
