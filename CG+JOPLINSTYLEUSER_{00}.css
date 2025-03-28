@@ -137,6 +137,24 @@ If you want styles to apply **only when printing (PDF export)**, use:
 			font-size: 12pt;
 			color: black;
 		}
+	    	body::after {
+			font-family: 'Bookman Old Style', serif;
+			font-weight: bold;
+	        	content: "Exported on: " attr(data-export-date);
+	        	display: block;
+	        	font-size: 12px;
+	        	text-align: right;
+	        	margin-top: 20px;
+	    	}
+	    	body::after {
+			font-family: 'Bookman Old Style', serif;
+			font-weight: bold;
+		        content: "Exported on: " attr(data-export-date);
+		        display: block;
+		        font-size: 12px;
+		        text-align: right;
+		        margin-top: 20px;
+		}		
 		hr {
 			border-bottom: 1px solid black;
 		}
