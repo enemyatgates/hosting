@@ -51,6 +51,10 @@ code, pre {
 	overflow-x: auto;
 }
 
+.mermaid {
+	text-align: center;
+}
+
 /* Exported Notes */
 .exported-note-title {
 	font-weight: bold;
