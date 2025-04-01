@@ -9,7 +9,6 @@
 
 /* Text ALignment */
 p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {text-align: justify !important}
-/* pre, code, pre code  {text-align: left !important} */
 
 /* Headings */
 h1 {font-size: 1.75em; font-variant: small-caps; border-bottom: none;}
