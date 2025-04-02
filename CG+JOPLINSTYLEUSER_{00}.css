@@ -21,9 +21,7 @@ table {
 }
 
 /* Mermaid Diagrams */
-.mermaid {
-	text-align: center;
-}
+.mermaid {text-align: center;}
 
 /* Exported Notes */
 .exported-note-title {
@@ -32,9 +30,7 @@ table {
 	border-bottom: solid;
 }
 
-.exported-note {
-	font-size: 0.75em;
-}
+.exported-note {font-size: 0.75em;}
 /*
 
 Reference:
