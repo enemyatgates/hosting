@@ -1,66 +1,40 @@
-/* General Styles */
-* {
-	font-family: 'Bookman Old Style', serif;
-	font-weight: normal;
-	line-height: 1.25em;
-}
-
-/* Text ALignment */
-p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {text-align: justify !important}
-
-/* Headings */
-h1 {font-size: 1.75em; font-variant: small-caps; border-bottom: none;}
+/* Fonts */
+*, blockquote, code, pre, table th, table td, table tr {font-family: 'Bookman Old Style', serif;}
+h1 {font-size: 1.75em; font-variant: small-caps; border-bottom: solid;}
 h2 {font-size: 1.50em; font-variant: small-caps;}
 h3 {font-size: 1.25em;}
 h4 {font-size: 1.25em;}
 h5 {font-size: 1.00em;}
-h6 {font-size: 1.00em;}
+h6 {font-size: 1.00em;}	
+
+/* Text Alignment */
+p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {text-align: justify !important}
 
 /* Line Horizontal */
-hr {border-bottom: 0.10em solid;}
+hr {border-bottom: solid;}
 
-/* Table Formatting */
+/* Table */
 table {
 	width: 100%;
 	table-layout: auto;
 	border-collapse: collapse;
-	border: 1px solid;
-}
-table th, table td, table tr {
-	font-family: 'Bookman Old Style', serif;
-	padding: 4px;
-	border: 1px solid;
 }
 
-table th {
-	font-weight: bold;
-}
-
-/* Blockquotes */
-blockquote {
-	font-family: 'Bookman Old Style', serif;
-	font-style: italic;
-}
-
-/* Code Blocks */
-code, pre {
-	font-family: 'Bookman Old Style', monospace;
-	overflow-x: auto;
+/* Mermaid Diagrams */
+.mermaid {
+	text-align: center;
 }
 
 /* Exported Notes */
 .exported-note-title {
 	font-weight: bold;
 	font-variant: small-caps;
-	border-bottom: 2px solid black;
-	margin-bottom: 10px;
-	padding-bottom: 5px;
+	border-bottom: 2px solid;
 }
 
 .exported-note {
 	font-size: 0.75em;
 }
-
 /*
 
 Reference:
