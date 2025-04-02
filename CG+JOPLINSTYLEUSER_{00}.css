@@ -29,7 +29,7 @@ table {
 .exported-note-title {
 	font-weight: bold;
 	font-variant: small-caps;
-	border-bottom: 2px solid;
+	border-bottom: solid;
 }
 
 .exported-note {
