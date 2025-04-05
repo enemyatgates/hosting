@@ -16,8 +16,6 @@ hr {border-bottom: solid;}
 /* Table */
 table {
 	width: 100%;
-	table-layout: auto;
-	border-collapse: collapse;
 }
 
 /* Mermaid Diagrams */
@@ -150,4 +148,10 @@ If you want styles to apply **only when printing (PDF export)**, use:
 ---
 
 This should help you fine-tune Joplin’s styling! Need help with anything specific?
+*/
+
+/*
+	table-layout: auto;
+	border-collapse: collapse;
+
 */
