@@ -1,10 +1,10 @@
 /* Fonts */
 *, blockquote, code, pre, table th, table td, table tr {font-family: 'Bookman Old Style', serif;}
 h1 {font-size: 1.75em; font-variant: small-caps; border-bottom: solid;}
-h2 {font-size: 1.50em; font-variant: small-caps;}
-h3 {font-size: 1.25em;}
-h4 {font-size: 1.25em;}
-h5 {font-size: 1.00em;}
+h2 {font-size: 1.60em; font-variant: small-caps;}
+h3 {font-size: 1.45em; font-variant: small-caps;}
+h4 {font-size: 1.30em;}
+h5 {font-size: 1.15em;}
 h6 {font-size: 1.00em;}	
 
 /* Text Alignment */
@@ -23,7 +23,6 @@ table {
 
 /* Exported Notes */
 .exported-note-title {
-	font-weight: bold;
 	font-variant: small-caps;
 	border-bottom: solid;
 }
