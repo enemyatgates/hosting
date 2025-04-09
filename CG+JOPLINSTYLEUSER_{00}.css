@@ -16,6 +16,8 @@ hr {border-bottom: solid;}
 /* Table */
 table {
 	width: 100%;
+	overflow-x: auto; /* Enable horizontal scrolling */
+  	display: block; /* Important for overflow to work correctly */
 }
 
 /* Mermaid Diagrams */
