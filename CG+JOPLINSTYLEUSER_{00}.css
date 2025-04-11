@@ -25,8 +25,9 @@ table {
 
 /* Exported Notes */
 .exported-note-title {
-	font-variant: small-caps;
-	border-bottom: solid;
+	display:none !important;
+	/* font-variant: small-caps;
+	border-bottom: solid; */
 }
 
 .exported-note {font-size: 0.75em;}
