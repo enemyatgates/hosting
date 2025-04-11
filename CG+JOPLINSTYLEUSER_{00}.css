@@ -1,10 +1,10 @@
 /* Fonts */
 *, blockquote, code, pre, table th, table td, table tr {font-family: 'Bookman Old Style', serif;}
 h1 {font-size: 1.75em; font-variant: small-caps; border-bottom: solid;}
-h2 {font-size: 1.60em; font-variant: small-caps;}
-h3 {font-size: 1.45em; font-variant: small-caps;}
-h4 {font-size: 1.30em;}
-h5 {font-size: 1.15em;}
+h2 {font-size: 1.50em; font-variant: small-caps;}
+h3 {font-size: 1.25em;}
+h4 {font-size: 1.25em;}
+h5 {font-size: 1.00em;}
 h6 {font-size: 1.00em;}	
 
 /* Text Alignment */
@@ -14,7 +14,7 @@ p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {text-align: justify 
 hr {border-bottom: solid;}
 
 /* Table */
-table {width: 100%;}
+table {width: 100%; table-layout: fixed;}
 
 /* Mermaid Diagrams */
 .mermaid {text-align: center;}
@@ -22,8 +22,8 @@ table {width: 100%;}
 /* Exported Notes */
 .exported-note-title {display: none !important;}
 .exported-note {font-size: 0.75em;}
-/*
 
+/*
 Reference:
 
 Yes! In Joplin, various **styling elements** can be targeted using CSS in `userstyle.css`. Here’s a breakdown of key elements that you can style:  
