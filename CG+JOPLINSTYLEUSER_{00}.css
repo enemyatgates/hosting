@@ -14,7 +14,7 @@ p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {text-align: justify 
 hr {border-bottom: solid;}
 
 /* Table */
-table {width: 100%; table-layout: fixed;}
+table {width: 100%;}
 
 /* Mermaid Diagrams */
 .mermaid {text-align: center;}
