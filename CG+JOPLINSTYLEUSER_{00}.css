@@ -11,7 +11,11 @@ h6 {font-size: 1.00em;}
 p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {text-align: justify !important}
 
 /* Line Horizontal */
-hr {border-bottom: solid;}
+hr {
+	border-bottom: solid;
+	padding-bottom: 1.6rem;
+	paddint-top: 1.6rem;
+}
 
 /* Table */
 table {width: 100%;}
