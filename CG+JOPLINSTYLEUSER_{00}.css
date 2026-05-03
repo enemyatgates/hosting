@@ -22,7 +22,7 @@ table {width: 100%;}
 /* Exported Notes */
 .exported-note-title {display: none !important;}
 .exported-note {font-size: 0.75rem;}
-.exported-note hr {border: 0.15rem solid #000000;}
+.exported-note hr {border: none; height: 0.25rem; background-color: #000000;}
 
 /*
 Reference:
