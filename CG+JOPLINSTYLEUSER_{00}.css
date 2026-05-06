@@ -27,12 +27,12 @@ table {width: 100%;}
 /* Page Definitions */
 @page {
 	margin: 1.50cm;
-	padding: 0.25cm;
-	@top-left {content: ""; font-size: 0.75rem; display: block; border-bottom: 0.25rem solid; margin-top: 0.50rem; font-weight: bold;}
+	padding: 0.125cm;
+	@top-left {content: "Thorian.VikasChandra"; font-size: 0.75rem; display: block; border-bottom: 0.25rem solid; margin-top: 0.50rem; font-weight: bold;}
 	@top-center {content: ""; font-size: 0.75rem; display: block; border-bottom: 0.25rem solid; margin-top: 0.50rem; font-weight: bold;}
-	@top-right {content: ""; font-size: 0.75rem; display: block; border-bottom: 0.25rem solid; margin-top: 0.50rem; font-weight: bold;}
-	@bottom-left {content: "© Ytsief Ventures [2026]"; font-size: 0.75rem; display: block; border-top: 0.25rem solid; margin-bottom: 0.50rem; font-weight: bold;}
-	@bottom-center {content: "Confidential"; font-size: 0.75rem; display: block; border-top: 0.25rem solid; margin-bottom: 0.50rem; font-weight: bold;}
+	@top-right {content: "Date and Time"; font-size: 0.75rem; display: block; border-bottom: 0.25rem solid; margin-top: 0.50rem; font-weight: bold;}
+	@bottom-left {content: "Confidential"; font-size: 0.75rem; display: block; border-top: 0.25rem solid; margin-bottom: 0.50rem; font-weight: bold;}
+	@bottom-center {content: "© Ytsief Ventures [2026]"; font-size: 0.75rem; display: block; border-top: 0.25rem solid; margin-bottom: 0.50rem; font-weight: bold;}
 	@bottom-right {content: "Page " counter(page) " of " counter(pages); font-size: 0.75rem; display: block; border-top: 0.25rem solid; margin-bottom: 0.50rem; font-weight: bold;}
 	}
 /*
