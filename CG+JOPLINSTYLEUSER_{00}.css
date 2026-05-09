@@ -6,6 +6,7 @@ h3 {font-size: 1.25em;}
 h4 {font-size: 1.25em;}
 h5 {font-size: 1.00em;}
 h6 {font-size: 1.00em;}	
+table th, table td, table tr {font-size: 0.75rem;}
 
 /* Text Alignment */
 p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {text-align: justify !important}
@@ -14,7 +15,7 @@ p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {text-align: justify 
 hr {border-bottom: solid;}
 
 /* Table */
-table {width: 100%;}
+table {width: 100%; table-layout: fixed;}
 
 /* Mermaid Diagrams */
 .mermaid {text-align: center;}
@@ -26,7 +27,7 @@ table {width: 100%;}
 
 /* Page Definitions */
 @page {
-	margin: 1.50cm;
+	margin: 1.00cm;
 	padding: 0.125cm;
 	@top-left {content: "Thorian.VikasChandra"; font-size: 0.75rem; display: block; border-bottom: 0.25rem solid; margin-top: 0.50rem; font-weight: bold;}
 	@top-center {content: ""; font-size: 0.75rem; display: block; border-bottom: 0.25rem solid; margin-top: 0.50rem; font-weight: bold;}
