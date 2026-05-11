@@ -1,33 +1,48 @@
-/* ============================================================
-Claude Joplin Custom Stylesheet — Ytsief Ventures [2026]
-All sizing in rem; base = 16px (1rem)
-============================================================ */
-
-/* ---------- Fonts & Base ---------- */
+/*
+===============================================================
+Joplin Custom Stylesheet for Ytsief Ventures [2026] by Claude
+===============================================================
+*/
 *, blockquote, code, pre, table th, table td, table tr {
 	font-family: 'Bookman Old Style', 'Book Antiqua', Georgia, serif;
 	font-size: 1rem;
 	line-height: 1.6;
 	box-sizing: border-box;
 }
-
-h1 {font-size: 1.75rem; font-variant: small-caps; border-bottom: 0.125rem solid; margin-bottom: 0.75rem;}
-h2 {font-size: 1.50rem; font-variant: small-caps; margin-bottom: 0.625rem;}
-h3 {font-size: 1.25rem; margin-bottom: 0.5rem;}
-h4 {font-size: 1.125rem; margin-bottom: 0.5rem;}
-h5 {font-size: 1.00rem; margin-bottom: 0.375rem;}
-h6 {font-size: 0.875rem; margin-bottom: 0.375rem;}
-
-/* ---------- Text Alignment ---------- */
-p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {text-align: justify !important;}
-
-/* ---------- Paragraphs & Spacing ---------- */
+h1 {
+	font-size: 1.75rem;
+	font-variant: small-caps;
+	border-bottom: 0.125rem solid;
+	margin-bottom: 0.75rem;
+}
+h2 {
+	font-size: 1.50rem;
+	font-variant: small-caps;
+	margin-bottom: 0.625rem;
+}
+h3 {
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+h4 {
+	font-size: 1.125rem;
+	margin-bottom: 0.5rem;
+}
+h5 {
+	font-size: 1.00rem;
+	margin-bottom: 0.375rem;
+}
+h6 {
+	font-size: 0.875rem;
+	margin-bottom: 0.375rem;
+}
+p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {
+	text-align: justify !important;
+}
 p {
 	margin-top: 0;
 	margin-bottom: 0.75rem;
 }
-
-/* ---------- Blockquote ---------- */
 blockquote {
 	border-left: 0.25rem solid #888;
 	margin: 1rem 0 1rem 1rem;
@@ -35,8 +50,6 @@ blockquote {
 	color: #444;
 	font-style: italic;
 }
-
-/* ---------- Code & Pre ---------- */
 code {
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 0.875rem;
@@ -44,7 +57,6 @@ code {
 	padding: 0.0625rem 0.25rem;
 	border-radius: 0.1875rem;
 }
-
 pre {
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 0.875rem;
@@ -57,44 +69,31 @@ pre {
 	word-wrap: break-word;
 	margin-bottom: 1rem;
 }
-
-/* ---------- Horizontal Rule ---------- */
 hr {
 	border: none;
 	border-bottom: 0.125rem solid;
 	margin: 1rem 0;
 }
-
-/* ---------- Links ---------- */
 a {
-	color: inherit;
 	text-decoration: underline;
 	text-underline-offset: 0.125rem;
 }
-
 a:hover {
 	opacity: 0.7;
 }
-
-/* ---------- Images ---------- */
 img {
 	max-width: 100%;
 	height: auto;
 	display: block;
 	margin: 0.75rem auto;
 }
-
-/* ---------- Lists ---------- */
 ul, ol {
 	padding-left: 1.5rem;
 	margin-bottom: 0.75rem;
 }
-
 li {
 	margin-bottom: 0.25rem;
 }
-
-/* ---------- Table ---------- */
 table {
 	width: 100%;
 	table-layout: fixed;
@@ -102,7 +101,6 @@ table {
 	margin-bottom: 1rem;
 	font-size: 0.75rem;
 }
-
 table th, table td {
 	font-size: 0.75rem;
 	padding: 0.375rem 0.5rem;
@@ -110,44 +108,30 @@ table th, table td {
 	vertical-align: top;
 	word-wrap: break-word;
 }
-
 table th {
 	font-weight: bold;
 	text-align: justify !important;
 }
-
 table tr:nth-child(even) {
-	/* background-color: #fafafa; */
 }
-
-/* ---------- Mermaid Diagrams ---------- */
 .mermaid {
 	text-align: center;
 	margin: 1rem 0;
 }
-
-/* ---------- Exported Notes (Joplin-specific) ---------- */
 .exported-note-title {
 	display: none !important;
 }
-
 .exported-note {
 	font-size: 0.75rem;
 }
-
 .exported-note hr {
 	border: none;
 	height: 0.125rem;
 	background-color: #000;
 }
-
-/* ---------- Print / Page Definitions ---------- */
 @page {
 	margin: 1.5cm;
 	padding: 0.125cm;
-	padding-top: 1.125cm;
-	padding-bottom: 1.125cm;
-
 	@bottom-center {
 		border-top: 0.125rem solid;
 		content: "© Ytsief Ventures [2026]";
@@ -157,7 +141,6 @@ table tr:nth-child(even) {
 		margin-bottom: 1rem;
 		margin-top: 1rem;
 	}
-
 	@bottom-left {
 		border-top: 0.125rem solid;
 		content: "Confidential";
@@ -167,7 +150,6 @@ table tr:nth-child(even) {
 		margin-bottom: 1rem;
 		margin-top: 1rem;
 	}
-
 	@bottom-right {
 		border-top: 0.125rem solid;
 		content: "Page " counter(page) " of " counter(pages);
@@ -177,7 +159,6 @@ table tr:nth-child(even) {
 		margin-bottom: 1rem;
 		margin-top: 1rem;
 	}
-
 	@top-center {
 		border-bottom: 0.125rem solid;
 		content: "";
@@ -187,7 +168,6 @@ table tr:nth-child(even) {
 		margin-bottom: 1rem;
 		margin-top: 1rem;
 	}
-
 	@top-left {
 		border-bottom: 0.125rem solid;
 		content: "";
@@ -197,7 +177,6 @@ table tr:nth-child(even) {
 		margin-bottom: 1rem;
 		margin-top: 1rem;
 	}
-
 	@top-right {
 		border-bottom: 0.125rem solid;
 		content: "";
@@ -208,11 +187,11 @@ table tr:nth-child(even) {
 		margin-top: 1rem;
 	}
 }
-
-/* Self Declared */
-
-/* Fonts */
-
+/*
+===============================================================
+Joplin Custom Stylesheet for Ytsief Ventures [2026] by Self
+===============================================================
+*/
 /*
 *, blockquote, code, pre, table th, table td, table tr {font-family: 'Bookman Old Style', serif; font-size: 1.00rem;}
 h1 {font-size: 1.75rem; font-variant: small-caps; border-bottom: 0.125rem solid;}
@@ -290,14 +269,12 @@ table {width: 100%; table-layout: fixed;}
 	}
 }
 */
-/* Self Declared */
 /*
-Reference:
-
-Yes! In Joplin, various **styling elements** can be targeted using CSS in `userstyle.css`. Here’s a breakdown of key elements that you can style:  
-
----
-
+===============================================================
+Joplin Custom Stylesheet for Ytsief Ventures [2026] by Reference
+===============================================================
+*/
+/*
 ## **1. Basic Text Elements**
 | Element | CSS Selector | Description |
 |---------|-------------|-------------|
@@ -306,45 +283,30 @@ Yes! In Joplin, various **styling elements** can be targeted using CSS in `users
 | **Blockquotes** | `blockquote` | Indented quoted text |
 | **Lists** | `ul, ol, li` | Unordered (`ul`) and ordered (`ol`) lists |
 | **Horizontal Line** | `hr` | Divider (`---` or `***`) |
-
----
-
 ## **2. Code & Preformatted Text**
 | Element | CSS Selector | Description |
 |---------|-------------|-------------|
 | **Inline Code** | `code` | `Inline code` (inside a sentence) |
 | **Code Blocks** | `pre, pre code` | Multiline code blocks |
 | **Joplin Code Editor** | `.joplin-editable` | Markdown editor styling |
-
----
-
 ## **3. Tables**
 | Element | CSS Selector | Description |
 |---------|-------------|-------------|
 | **Table** | `table` | The entire table |
 | **Table Rows** | `tr` | Rows inside tables |
 | **Table Cells** | `td, th` | Cells (normal and header) |
-
----
-
 ## **4. Links & Media**
 | Element | CSS Selector | Description |
 |---------|-------------|-------------|
 | **Hyperlinks** | `a` | Clickable links |
 | **Images** | `img` | Embedded images |
 | **Attachments** | `.resource-icon` | Attached files like PDFs |
-
----
-
 ## **5. Math & Diagrams**
 | Element | CSS Selector | Description |
 |---------|-------------|-------------|
 | **KaTeX Inline Math** | `.katex` | `$E=mc^2$` (inline equations) |
 | **KaTeX Block Math** | `.katex-display` | `$$E=mc^2$$` (block equations) |
 | **Mermaid Diagrams** | `.mermaid` | Flowcharts, sequence diagrams |
-
----
-
 ## **6. Special Joplin Elements**
 | Element | CSS Selector | Description |
 |---------|-------------|-------------|
@@ -353,9 +315,6 @@ Yes! In Joplin, various **styling elements** can be targeted using CSS in `users
 | **Tags** | `.tag-list` | The tags section |
 | **Note Title** | `.title-input` | The note’s title field |
 | **Editor Area** | `.joplin-editable` | The Markdown editor itself |
-
----
-
 ## **7. Printing/Export Styling**
 If you want styles to apply **only when printing (PDF export)**, use:  
 	@media print {
@@ -363,23 +322,23 @@ If you want styles to apply **only when printing (PDF export)**, use:
 			font-size: 12pt;
 			color: black;
 		}
-	    	body::after {
+			body::after {
 			font-family: 'Bookman Old Style', serif;
 			font-weight: bold;
-	        	content: "Exported on: " attr(data-export-date);
-	        	display: block;
-	        	font-size: 12px;
-	        	text-align: right;
-	        	margin-top: 20px;
-	    	}
-	    	body::after {
+				content: "Exported on: " attr(data-export-date);
+				display: block;
+				font-size: 12px;
+				text-align: right;
+				margin-top: 20px;
+			}
+			body::after {
 			font-family: 'Bookman Old Style', serif;
 			font-weight: bold;
-		        content: "Exported on: " attr(data-export-date);
-		        display: block;
-		        font-size: 12px;
-		        text-align: right;
-		        margin-top: 20px;
+				content: "Exported on: " attr(data-export-date);
+				display: block;
+				font-size: 12px;
+				text-align: right;
+				margin-top: 20px;
 		}		
 		hr {
 			border-bottom: 1px solid black;
@@ -388,7 +347,6 @@ If you want styles to apply **only when printing (PDF export)**, use:
 			text-align: center !important;
 		}
 	}
-
 	@media (prefers-color-scheme: dark) {
 		* {
 			color: white;
@@ -405,14 +363,5 @@ If you want styles to apply **only when printing (PDF export)**, use:
 			border-bottom: 0.1em solid black;
 		}
 	}
-
----
-
 This should help you fine-tune Joplin’s styling! Need help with anything specific?
-*/
-
-/*
-	table-layout: auto;
-	border-collapse: collapse;
-
 */
