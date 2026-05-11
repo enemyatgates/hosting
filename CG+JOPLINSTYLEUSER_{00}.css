@@ -106,19 +106,18 @@ table {
 table th, table td {
 	font-size: 0.75rem;
 	padding: 0.375rem 0.5rem;
-	border: 0.0625rem solid #ccc;
+	border: 0.0625rem solid;
 	vertical-align: top;
 	word-wrap: break-word;
 }
 
 table th {
 	font-weight: bold;
-	background-color: #f0f0f0;
-	text-align: center !important;
+	text-align: justify !important;
 }
 
 table tr:nth-child(even) {
-	background-color: #fafafa;
+	/* background-color: #fafafa; */
 }
 
 /* ---------- Mermaid Diagrams ---------- */
