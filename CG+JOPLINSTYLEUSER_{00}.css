@@ -223,25 +223,13 @@ h4 {font-size: 1.25rem;}
 h5 {font-size: 1.00rem;}
 h6 {font-size: 1.00rem;}	
 table th, table td, table tr {font-size: 0.75rem;}
-
-/* Text Alignment */
 p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {text-align: justify !important}
-
-/* Line Horizontal */
 hr {border-bottom: solid;}
-
-/* Table */
 table {width: 100%; table-layout: fixed;}
-
-/* Mermaid Diagrams */
 .mermaid {text-align: center;}
-
-/* Exported Notes */
 .exported-note-title {display: none !important;}
 .exported-note {font-size: 0.75rem;}
 .exported-note hr {border: none; height: 0.125rem; background-color: #000000;}
-
-/* Page Definitions */
 @page {
 	margin: 1.50cm;
 	padding: 0.125cm;
