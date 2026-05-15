@@ -3,6 +3,9 @@
 Joplin Custom Stylesheet for Ytsief Ventures [2026] by Claude
 ===============================================================
 */
+.exported-note {font-size: 0.75rem;}
+.exported-note hr {border: none; height: 0.125rem; background-color: #000;}
+.exported-note-title {display: none !important;}
 *, blockquote, code, pre, table th, table td, table tr {
 	font-family: 'Bookman Old Style', 'Book Antiqua', Georgia, serif;
 	font-size: 1rem;
@@ -118,74 +121,65 @@ table tr:nth-child(even) {
 	text-align: center;
 	margin: 1rem 0;
 }
-.exported-note-title {
-	display: none !important;
-}
-.exported-note {
-	font-size: 0.75rem;
-}
-.exported-note hr {
-	border: none;
-	height: 0.125rem;
-	background-color: #000;
-}
 @page {
-	margin: 2rem;
-	padding: 2rem;
-	@bottom-center {
-		margin: 0;
-		padding: 0.125rem;
-		font-size: 0.75rem;
-		font-weight: bold;
-		border-top: 0.125rem solid;
-		content: "© 2026 Ytsief Ventures";
-		margin-bottom: 1rem;
-	}
-	@bottom-left {
-		margin: 0;
-		padding: 0.125rem;
-		font-size: 0.75rem;
-		font-weight: bold;
-		border-top: 0.125rem solid;
-		content: "Confidential";
-		margin-bottom: 1rem;
-	}
-	@bottom-right {
-		margin: 0;
-		padding: 0.125rem;
-		font-size: 0.75rem;
-		font-weight: bold;
-		border-top: 0.125rem solid;
-		content: "Page " counter(page) " of " counter(pages);
-		margin-bottom: 1rem;
-	}
-	@top-center {
-		margin: 0;
-		padding: 0.125rem;
-		font-size: 0.75rem;
-		font-weight: bold;
-		border-bottom: 0.125rem solid;
-		content: "";
-		margin-top: 1rem;
-	}
-	@top-left {
-		margin: 0;
-		padding: 0.125rem;
-		font-size: 0.75rem;
-		font-weight: bold;
-		border-bottom: 0.125rem solid;
-		content: "{{template_title}}";
-		margin-top: 1rem;
-	}
-	@top-right {
-		margin: 0;
-		padding: 0.125rem;
-		font-size: 0.75rem;
-		font-weight: bold;
-		border-bottom: 0.125rem solid;
-		content: "{{datetime format="YYYY.MM.DD @ HH:mm:ss Z \[dddd\]"}}";
-		margin-top: 1rem;
-	}
+    margin: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 0rem;
+    @bottom-center {
+        margin: 0;
+        padding: 0.125rem;
+        font-size: 0.75rem;
+        font-weight: bold;
+        border-top: 0.125rem solid;
+        content: "© 2026 Ytsief Ventures";
+        margin-bottom: 1rem;
+    }
+    @bottom-left {
+        margin: 0;
+        padding: 0.125rem;
+        font-size: 0.75rem;
+        font-weight: bold;
+        border-top: 0.125rem solid;
+        content: "Confidential";
+        margin-bottom: 1rem;
+    }
+    @bottom-right {
+        margin: 0;
+        padding: 0.125rem;
+        font-size: 0.75rem;
+        font-weight: bold;
+        border-top: 0.125rem solid;
+        content: "Page " counter(page) " of " counter(pages);
+        margin-bottom: 1rem;
+    }
+    @top-center {
+        margin: 0;
+        padding: 0.125rem;
+        font-size: 0.75rem;
+        font-weight: bold;
+        border-bottom: 0.125rem solid;
+        content: "";
+        margin-top: 1rem;
+    }
+    @top-left {
+        margin: 0;
+        padding: 0.125rem;
+        font-size: 0.75rem;
+        font-weight: bold;
+        border-bottom: 0.125rem solid;
+        content: "";
+        margin-top: 1rem;
+    }
+    @top-right {
+        margin: 0;
+        padding: 0.125rem;
+        font-size: 0.75rem;
+        font-weight: bold;
+        border-bottom: 0.125rem solid;
+        content: "";
+        margin-top: 1rem;
+    }
 }
 /*
 ===============================================================
