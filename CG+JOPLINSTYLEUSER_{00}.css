@@ -130,60 +130,60 @@ table tr:nth-child(even) {
 	background-color: #000;
 }
 @page {
-	margin: 1.5cm;
-	padding: 0.125cm;
+	margin: 2rem;
+	padding: 2rem;
 	@bottom-center {
-		border-top: 0.125rem solid;
-		content: "© Ytsief Ventures [2026]";
-		display: block;
-		font-size: 0.6875rem;
+		margin: 0;
+		padding: 0.125rem;
+		font-size: 0.75rem;
 		font-weight: bold;
+		border-top: 0.125rem solid;
+		content: "© 2026 Ytsief Ventures";
 		margin-bottom: 1rem;
-		margin-top: 1rem;
 	}
 	@bottom-left {
+		margin: 0;
+		padding: 0.125rem;
+		font-size: 0.75rem;
+		font-weight: bold;
 		border-top: 0.125rem solid;
 		content: "Confidential";
-		display: block;
-		font-size: 0.6875rem;
-		font-weight: bold;
 		margin-bottom: 1rem;
-		margin-top: 1rem;
 	}
 	@bottom-right {
+		margin: 0;
+		padding: 0.125rem;
+		font-size: 0.75rem;
+		font-weight: bold;
 		border-top: 0.125rem solid;
 		content: "Page " counter(page) " of " counter(pages);
-		display: block;
-		font-size: 0.6875rem;
-		font-weight: bold;
 		margin-bottom: 1rem;
-		margin-top: 1rem;
 	}
 	@top-center {
+		margin: 0;
+		padding: 0.125rem;
+		font-size: 0.75rem;
+		font-weight: bold;
 		border-bottom: 0.125rem solid;
 		content: "";
-		display: block;
-		font-size: 0.6875rem;
-		font-weight: bold;
-		margin-bottom: 1rem;
 		margin-top: 1rem;
 	}
 	@top-left {
-		border-bottom: 0.125rem solid;
-		content: "";
-		display: block;
-		font-size: 0.6875rem;
+		margin: 0;
+		padding: 0.125rem;
+		font-size: 0.75rem;
 		font-weight: bold;
-		margin-bottom: 1rem;
+		border-bottom: 0.125rem solid;
+		content: "{{template_title}}";
 		margin-top: 1rem;
 	}
 	@top-right {
-		border-bottom: 0.125rem solid;
-		content: "";
-		display: block;
-		font-size: 0.6875rem;
+		margin: 0;
+		padding: 0.125rem;
+		font-size: 0.75rem;
 		font-weight: bold;
-		margin-bottom: 1rem;
+		border-bottom: 0.125rem solid;
+		content: "{{datetime format="YYYY.MM.DD @ HH:mm:ss Z \[dddd\]"}}";
 		margin-top: 1rem;
 	}
 }
