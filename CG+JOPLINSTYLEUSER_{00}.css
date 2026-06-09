@@ -5,121 +5,46 @@ Joplin Custom Stylesheet for Ytsief Ventures [2026] by Claude
 */
 *, blockquote, code, pre, table th, table td, table tr {
 	font-family: 'Bookman Old Style', 'Book Antiqua', Georgia, serif;
-	font-size: 1rem;
 	line-height: 1.6;
-	box-sizing: border-box;
-}
-h1 {
-	font-size: 1.75rem;
-	font-variant: small-caps;
-	border-bottom: 0.125rem solid;
-	margin-bottom: 0.75rem;
-}
-h2 {
-	font-size: 1.50rem;
-	font-variant: small-caps;
-	margin-bottom: 0.625rem;
-}
-h3 {
-	font-size: 1.25rem;
-	margin-bottom: 0.5rem;
-}
-h4 {
-	font-size: 1.125rem;
-	margin-bottom: 0.5rem;
-}
-h5 {
-	font-size: 1.00rem;
-	margin-bottom: 0.375rem;
-}
-h6 {
-	font-size: 0.875rem;
-	margin-bottom: 0.375rem;
 }
 p, blockquote, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, img {
 	text-align: justify;
 }
-p {
-	margin-top: 0;
-	margin-bottom: 0.75rem;
+h1 {
+	font-variant: small-caps;
+	border-bottom: 0.0625rem solid;
 }
-blockquote {
-	border-left: 0.25rem solid;
-	margin: 1rem 0 1rem 1rem;
-	padding: 0.25rem 0.75rem;
-	font-style: italic;
-}
-code {
-	font-family: 'Courier New', Courier, monospace;
-	font-size: 0.875rem;
-	padding: 0.0625rem 0.25rem;
-	border-radius: 0.1875rem;
+h2 {
+	font-variant: small-caps;
 }
 pre {
-	font-family: 'Courier New', Courier, monospace;
-	font-size: 0.875rem;
-	border: 0.0625rem solid;
-	border-radius: 0.25rem;
-	padding: 0.75rem 1rem;
 	overflow-x: auto;
 	white-space: pre-wrap;
 	word-wrap: break-word;
-	margin-bottom: 1rem;
-}
-hr {
-	border: none;
-	border-bottom: 0.125rem solid;
-	margin: 1rem 0;
-}
-a {
-	text-decoration: underline;
-	text-underline-offset: 0.125rem;
-}
-a:hover {
-	opacity: 0.7;
 }
 img {
 	max-width: 100%;
 	height: auto;
 	display: block;
-	margin: 0.75rem auto;
-}
-ul, ol {
-	padding-left: 1.5rem;
-	margin-bottom: 0.75rem;
-}
-li {
-	margin-bottom: 0.25rem;
 }
 table {
 	width: auto;
 	table-layout: fixed;
 	border-collapse: collapse;
-	margin-bottom: 1rem;
-	font-size: 0.75rem;
 }
 table th, table td {
-	font-size: 0.75rem;
-	padding: 0.375rem 0.5rem;
-	border: 0.0625rem solid;
-	vertical-align: top;
 	word-wrap: break-word;
 }
 table th {
 	font-weight: bold;
 	text-align: justify;
 }
-table tr:nth-child(even) {
-}
 .mermaid {text-align: center;}
 .exported-note {font-size: 0.75rem;}
-.exported-note hr {border: none; height: 0.125rem; background-color: #000000;}
 .exported-note-title {display: none;}
 @page {
-    margin: 2rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding: 0rem;
+    margin: 3rem;
+    padding: 0.25rem;
     @bottom-center {
         margin: 0;
         padding: 0.125rem;
